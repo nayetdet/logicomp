@@ -5,7 +5,7 @@ Charles não pode na Sexta.
 David só pode na Quinta ou na Sexta.
 Existe um dia que eles possam se reunir satisfazendo todas as demandas?"""
 
-from semantics import *
+from src.semantics import *
 
 meeting_monday = Atom('reuniao na segunda')
 meeting_tuesday = Atom('reuniao na terca')

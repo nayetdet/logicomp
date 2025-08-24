@@ -2,7 +2,6 @@ class FormulaFOL:
     def __init__(self):
         pass
 
-
 class Atom(FormulaFOL):
 
     def __init__(self, name, args):
@@ -31,7 +30,6 @@ class Atom(FormulaFOL):
     def __hash__(self):
         return hash(tuple(self.args) + (self.name, 'atom'))
 
-
 class Implies(FormulaFOL):
 
     def __init__(self, left, right):
@@ -48,7 +46,6 @@ class Implies(FormulaFOL):
     def __hash__(self):
         return hash((hash(self.left), hash(self.right), 'implies'))
 
-
 class Not(FormulaFOL):
 
     def __init__(self, inner):
@@ -63,7 +60,6 @@ class Not(FormulaFOL):
 
     def __hash__(self):
         return hash((hash(self.inner), 'not'))
-
 
 class And(FormulaFOL):
 
@@ -81,7 +77,6 @@ class And(FormulaFOL):
     def __hash__(self):
         return hash((hash(self.left), hash(self.right), 'and'))
 
-
 class Or(FormulaFOL):
 
     def __init__(self, left, right):
@@ -98,7 +93,6 @@ class Or(FormulaFOL):
     def __hash__(self):
         return hash((hash(self.left), hash(self.right), 'or'))
 
-
 class ForAll(FormulaFOL):
 
     def __init__(self, var, inner):
@@ -114,7 +108,6 @@ class ForAll(FormulaFOL):
 
     def __hash__(self):
         return hash((hash(self.inner), 'all', hash(self.var)))
-
 
 class Exists(FormulaFOL):
 

@@ -7,7 +7,7 @@ Amy diz: “Bob e eu somos mentirosos.”
 Essa situação é possível nas condições do puzzle?
 É possível dizer qual a categoria de Amy e de Bob? Justifique."""
 
-from semantics import *
+from src.semantics import *
 
 amy_honest = Atom('amy é honesta')
 bob_honest = Atom('bob é honesto')

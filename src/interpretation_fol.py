@@ -17,7 +17,6 @@ Note that we use a dictionary to represent the interpretation of a function.
 from fol_formula import *
 from term import *
 
-
 class Interpretation:
     def __init__(self, domain, predicates, functions, constants, variables):
         self.domain = domain

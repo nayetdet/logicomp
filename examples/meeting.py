@@ -5,7 +5,7 @@ Ana não pode na Sexta.
 Pedro não pode Terça nem Quinta.
 Existe um dia que eles possam se reunir satisfazendo todas as demandas?"""
 
-from semantics import *
+from src.semantics import *
 
 meeting_monday = Atom('reuniao na segunda')
 meeting_tuesday = Atom('reuniao na terca')

@@ -1,7 +1,7 @@
 """A loja não estava aberta ou os funcionários não estavam atendendo ou,
 a loja estava aberta e os funcionários estavam atendendo."""
 
-from semantics import *
+from src.semantics import *
 
 loja_aberta = Atom('a loja estava aberta')
 funcionarios_atendendo = Atom('os funcionários estavam atendendo')

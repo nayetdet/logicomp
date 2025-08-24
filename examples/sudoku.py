@@ -1,4 +1,4 @@
-from semantics import *
+from src.semantics import *
 import time
 
 '''

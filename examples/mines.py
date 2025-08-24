@@ -1,6 +1,4 @@
-from semantics import *
-from typing import List
-from typing import Union
+from src.semantics import *
 
 """Campo Minado é um jogo em que o objetivo é limpar uma grade sem detonar nenhuma mina.
 O jogador é apresentado inicialmente com uma grade de quadrados indiferenciados.

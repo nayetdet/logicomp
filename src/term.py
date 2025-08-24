@@ -2,7 +2,6 @@ class Term:
     def __init__(self):
         pass
 
-
 class Con(Term):
 
     def __init__(self, name):
@@ -18,7 +17,6 @@ class Con(Term):
     def __hash__(self):
         return hash((self.name, 'con'))
 
-
 class Var(Term):
 
     def __init__(self, name):
@@ -33,7 +31,6 @@ class Var(Term):
 
     def __hash__(self):
         return hash((self.name, 'var'))
-
 
 class Fun(Term):
 

@@ -1,6 +1,6 @@
 """Se João ganhar as eleições, a criminalidade aumentará se a escolaridade não melhorar."""
 
-from semantics import *
+from src.semantics import *
 
 ganhar = Atom('joão ganha a eleição')
 mais_escolaridade = Atom('a escolaridade melhora')

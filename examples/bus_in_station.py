@@ -5,8 +5,7 @@ O trem chegou tarde na estação.
 É possível concluir que tinha ônibus na estação?
 """
 
-from formula import *
-from semantics import *
+from src.semantics import *
 
 trem_tarde = Atom('o trem chegou tarde')
 onibus_estacao = Atom('tinha ônibus na estação')

@@ -1,7 +1,6 @@
 from fol_formula import *
 from term import *
 
-
 def length_fol(formula):
     """Determines the length of a formula in first-order logic."""
     if isinstance(formula, Atom):
@@ -13,16 +12,13 @@ def length_fol(formula):
     if isinstance(formula, ForAll) or isinstance(formula, Exists):
         return 1 + length_fol(formula.inner)
 
-
 def subformulas_fol(formula):
     """Returns the set of all subformulas of a first-order formula"""
     pass
 
-
 def constants_from_term(term):
     """Returns the set of all constant occurring in a term"""
     pass
-
 
 def variables_from_term(term):
     """Returns the set of all variables occurring in a term"""
@@ -36,7 +32,6 @@ def variables_from_term(term):
             variables = variables.union(variables_from_term(inner_term))
         return variables
 
-
 def function_symbols_from_term(term):
     """Returns the set of all function symbols occurring in a term
     For example, function_symbols_from_term(Fun('f', [Var('x'), Con('a')]))
@@ -49,11 +44,9 @@ def function_symbols_from_term(term):
     """
     pass
 
-
 def all_constants(formula):
     """Returns the set of all constant occurring in a formula"""
     pass
-
 
 def predicate_symbols(formula):
     """Returns the set of all predicate symbols occurring in a formula.
@@ -61,7 +54,6 @@ def predicate_symbols(formula):
     must return {'P', 'R'}
     """
     pass
-
 
 def function_symbols(formula):
     """Returns the set of all function symbols occurring in a formula.
@@ -73,31 +65,25 @@ def function_symbols(formula):
     """
     pass
 
-
 def atoms_fol(formula):
     """Returns the set of all atomic suformulas of a first-order formula"""
     pass
-
 
 def free_variables(formula):
     """Returns the set of all free variables of a formula"""
     pass
 
-
 def bounded_variables(formula):
     """Returns the set of all bounded variables of a formula"""
     pass
-
 
 def universal_closure(formula):
     """Returns the universal closure of a formula"""
     pass
 
-
 def existential_closure(formula):
     """Returns the existential closure of a formula"""
     pass
-
 
 def number_free_occurrences(var, formula):
     """Returns the number of free occurrences of variable var in formula.
@@ -111,7 +97,6 @@ def number_free_occurrences(var, formula):
     must return 1
     """
     pass
-
 
 # scope?
 # quantifier-free

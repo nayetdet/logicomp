@@ -40,7 +40,6 @@ class Atom(Formula):
     # end def
 # end class Atom
 
-
 class Implies(Formula):
     def __init__(self, left: Formula, right: Formula):
         super().__init__()
@@ -60,7 +59,6 @@ class Implies(Formula):
         return hash((hash(self.left), hash(self.right), 'implies'))
     # end def
 # end class Implies
-
 
 class Not(Formula):
 
@@ -82,7 +80,6 @@ class Not(Formula):
     # end def
 # end class Not
 
-
 class And(Formula):
     def __init__(self, left: Formula, right: Formula):
         super().__init__()
@@ -102,7 +99,6 @@ class And(Formula):
         return hash((hash(self.left), hash(self.right), 'and'))
     # end def
 # end class And
-
 
 class Or(Formula):
 
@@ -125,7 +121,6 @@ class Or(Formula):
     # end def
 # end class Or
 
-
 class Iff:
     """
     Describes the 'if and only if' logical connective (<->) from propositional logic.
@@ -133,7 +128,6 @@ class Iff:
     """
     pass
 # end class Iff
-
 
 class Xor:
     """
